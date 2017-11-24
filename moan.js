@@ -1,5 +1,5 @@
 $(window).ready(function () {
-    var moan = new Audio("https://github.com/rogerhil/discogsapi/raw/master/discogsapi/moan.mpeg");
+    var moan = new Audio("https://github.com/rogerhil/moan/raw/master/moan.mpeg");
     $(window).keydown(function (e) {
         switch (e.keyCode) {
             case 77:
