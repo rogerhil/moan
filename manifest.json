@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Moan Keys",
-  "description": "WIll sound like the whatsapp moaning woman when pressing the keys: M O A N",
-  "version": "1.0",
+  "name": "Moaning Keys",
+  "description": "Listen to a woman moaning as you type: M O A N.",
+  "version": "1.1",
 
   "content_scripts": [
       {
-          "js": ["lib/jquery-2.1.1.min.js", "moan.js"],
+          "js": ["lib/jquery-2.1.1.min.js", "moaning-keys.js"],
           "matches": ["http://*/*", "https://*/*"]
       }
   ],
@@ -17,18 +17,6 @@
    "default_popup": "popup.html"
   },
   "permissions": [
-      "storage",
-      "tabs",
-      "contextMenus",
-      "webRequest",
-      "<all_urls>",
-      "activeTab",
-      "http://*/*",
-      "https://*/*",
-      "webNavigation",
-      "webRequestBlocking",
-      "cookies",
-      "storage",
-      "unlimitedStorage"
+      "storage"
   ]
 }

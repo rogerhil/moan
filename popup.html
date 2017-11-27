@@ -4,9 +4,77 @@
     <title>Moan</title>
     <script src="lib/jquery-2.1.1.min.js"></script>
     <script src="popup.js"></script>
+    <style>
+      body {
+        min-width: 320px;
+        background-color: gold;
+        padding: 20px;
+      }
+      h1 {
+        color: deeppink;
+      }
+      .container {
+        padding: 20px;
+        background-color: #fff;
+        border: 1px dashed deeppink;
+      }
+      .center {
+        text-align: center;
+      }
+      #enable-field {
+        width: 200px;
+        height: 80px;
+        margin: 0 auto 20px auto;
+      }
+      #enable-field label {
+        cursor: pointer;
+        transition: .5s;
+      }
+      #enable-field label img {
+        width: 60px;
+      }
+      #enable-field label:hover {
+        opacity: .6;
+        transition: .5s;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+    </style>
   </head>
   <body>
-    <h1>Moan</h1>
-    <button id="start">Start!</button>
+    <div class="container">
+      <h1 class="center">Moaning Keys</h1>
+      <p>
+        Listen to a woman moaning as you type: M O A N.
+      </p>
+      <div id="enable-field" class="center">
+        <label class="left" for="disabled">
+          <img src="quiet.png" /><br>
+          <input name="enabled" id="disabled" type="radio" value="false" /> disabled
+        </label>
+        <label class="right" for="enabled">
+          <img src="moan.png" /><br>
+          <input name="enabled" id="enabled" type="radio" value="true" /> enabled
+        </label>
+      </div>
+      <div>
+        <label for="duration">
+          Moaning duration:&nbsp;&nbsp;
+        </label>
+        <select name="duration" id="duration">
+          <option value="500">half second</option>
+          <option value="1000">1 second</option>
+          <option value="2000">2 seconds</option>
+          <option value="3000">3 seconds</option>
+          <option value="4000">4 seconds</option>
+          <option value="5000">5 seconds</option>
+          <option value="6000">6 seconds</option>
+        </select>
+      </div>
+    </div>
   </body>
 </html>
